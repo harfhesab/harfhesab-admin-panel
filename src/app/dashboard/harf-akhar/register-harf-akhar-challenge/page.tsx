@@ -216,7 +216,7 @@ const Page = () => {
     setLoading(true)
     let data = {
       query: `
-          mutation newKalamAkharChallengeDefinition(
+          mutation newHarfAkharChallengeDefinition(
             $title : String!,
             $description : String,
             $time_limit : Int,
@@ -237,7 +237,7 @@ const Page = () => {
             $publication_status : String!,
             $completion_status : String!,
           ){
-            newKalamAkharChallengeDefinition(
+            newHarfAkharChallengeDefinition(
               title : $title,
               description : $description,
               time_limit : $time_limit,
@@ -334,8 +334,8 @@ const Page = () => {
     })
       .then(async (response) => {
         setLoading(false);
-        if (response.data?.data?.newKalamAkharChallengeDefinition?.status == 200) {
-            toast.success(response.data?.data?.newKalamAkharChallengeDefinition?.message, {
+        if (response.data?.data?.newHarfAkharChallengeDefinition?.status == 200) {
+            toast.success(response.data?.data?.newHarfAkharChallengeDefinition?.message, {
               position: "top-center",
               autoClose: 3000,
               hideProgressBar: false,
@@ -1052,23 +1052,23 @@ const Page = () => {
         <div className="mt-6">
           <label
             className="font-['iransans-md'] flex-1 text-right text-text6 dark:text-text6_dark text-[.85rem] sm:text-[.95rem] cursor-pointer py-3"
-            htmlFor="kalam-akhar-challenge-title"
+            htmlFor="harf-akhar-challenge-title"
           >
             عنوان آیتم
             <span className="text-red-500 px-1">*</span>
             <div className={`mt-1 flex gap-2 w-full items-center justify-between`}>
-              <Input id="kalam-akhar-challenge-title" value={title} changeState={setTitle} classes="flex-1" inputStyles="!text-base" />
+              <Input id="harf-akhar-challenge-title" value={title} changeState={setTitle} classes="flex-1" inputStyles="!text-base" />
             </div>
           </label>
         </div>
         <div className="mt-6">
           <label
             className="text-right lg:w-2/3 w-5/6 xl:w-3/5 2xl:w-1/2 text-text6 dark:text-text6_dark cursor-pointer font-iransans-md text-sm"
-            htmlFor="description-kalam-akhar-challenge"
+            htmlFor="description-harf-akhar-challenge"
           >
             توضیحات آیتم
             <TextAreaInput
-              id={"description-kalam-akhar-challenge"}
+              id={"description-harf-akhar-challenge"}
               value={description}
               changeState={(e: any) => setDescription(e)}
               textAreaStyles="!text-sm mt-1"

@@ -199,10 +199,10 @@ const Page = () => {
       method: "post",
       data: {
         query: `
-            query getKalamAkharChallengeInformationForAdmin(
+            query getHarfAkharChallengeInformationForAdmin(
               $_id : ID!,
             ){
-                getKalamAkharChallengeInformationForAdmin(
+                getHarfAkharChallengeInformationForAdmin(
                   _id : $_id,
                 ) {
                     _id,
@@ -238,7 +238,7 @@ const Page = () => {
         },
       },
     }).then(async (response) => {
-        const data = response.data.data.getKalamAkharChallengeInformationForAdmin;
+        const data = response.data.data.getHarfAkharChallengeInformationForAdmin;
         if (data) {
           const deepCopy = structuredClone(data);
           setOldData(deepCopy);
@@ -334,7 +334,7 @@ const Page = () => {
     const endDateValue = endDate? new Date(new Date(new Date(endDate).setHours(endDateHour)).setMinutes(0)): null;
     let data = {
       query: `
-          mutation editKalamAkharChallengeInformation(
+          mutation editHarfAkharChallengeInformation(
             $_id : ID!,
             $title : String,
             $description : String,
@@ -354,7 +354,7 @@ const Page = () => {
             $publication_status : String,
             $completion_status : String,
           ){
-            editKalamAkharChallengeInformation(
+            editHarfAkharChallengeInformation(
               _id : $_id,
               title : $title,
               description : $description,
@@ -408,8 +408,8 @@ const Page = () => {
       .then(async (response) => {
         console.log(response)
         setLoading(false);
-        if (response.data?.data?.editKalamAkharChallengeInformation?.status == 200) {
-            toast.success(response.data?.data?.editKalamAkharChallengeInformation?.message, {
+        if (response.data?.data?.editHarfAkharChallengeInformation?.status == 200) {
+            toast.success(response.data?.data?.editHarfAkharChallengeInformation?.message, {
               position: "top-center",
               autoClose: 5000,
               hideProgressBar: false,
@@ -645,23 +645,23 @@ const Page = () => {
       <div className="mt-6">
         <label
           className="font-['iransans-md'] flex-1 text-right text-text6 dark:text-text6_dark text-[.85rem] sm:text-[.95rem] cursor-pointer py-3"
-          htmlFor="kalam-akhar-challenge-title"
+          htmlFor="harf-akhar-challenge-title"
         >
           عنوان آیتم
           <span className="text-red-500 px-1">*</span>
           <div className={`mt-1 flex gap-2 w-full items-center justify-between`}>
-            <Input id="kalam-akhar-challenge-title" value={title} changeState={setTitle} classes="flex-1" inputStyles="!text-base" />
+            <Input id="harf-akhar-challenge-title" value={title} changeState={setTitle} classes="flex-1" inputStyles="!text-base" />
           </div>
         </label>
       </div>
       <div className="mt-6">
         <label
           className="text-right lg:w-2/3 w-5/6 xl:w-3/5 2xl:w-1/2 text-text6 dark:text-text6_dark cursor-pointer font-iransans-md text-sm"
-          htmlFor="description-kalam-akhar-challenge"
+          htmlFor="description-harf-akhar-challenge"
         >
           توضیحات آیتم
           <TextAreaInput
-            id={"description-kalam-akhar-challenge"}
+            id={"description-harf-akhar-challenge"}
             value={description}
             changeState={(e: any) => setDescription(e)}
             textAreaStyles="!text-sm mt-1"
@@ -951,7 +951,7 @@ pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full shadow
           <div className={`mt-1 flex-1 gap-2 w-full items-center justify-between`}>
             <SelectInput
               value={publicationStatus}
-              name="kalam-akhar-publication-status"
+              name="harf-akhar-publication-status"
               options={PublicationStatus}
               onChange={(value) => setPublicationStatus(value)}
             />
@@ -968,7 +968,7 @@ pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full shadow
           <div className={`mt-1 flex-1 gap-2 w-full items-center justify-between`}>
             <SelectInput
               value={completionStatus}
-              name="kalam-akhar-completion-status"
+              name="harf-akhar-completion-status"
               options={CompletionStatus}
               onChange={(value) => setCompletionStatus(value)}
             />

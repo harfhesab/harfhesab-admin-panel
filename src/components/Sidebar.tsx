@@ -466,8 +466,8 @@ const navigation: any = [
     ],
   },
   {
-    name: "کلام آخر",
-    href: "/dashboard/kalam-akhar",
+    name: "حرف آخر",
+    href: "/dashboard/harf-akhar",
     icon: (
       <div className="text-xl">
         <IoTrailSign />
@@ -477,7 +477,7 @@ const navigation: any = [
     children: [
       {
         name: "ثبت چالش جدید",
-        href: "/register-kalam-akhar-challenge",
+        href: "/register-harf-akhar-challenge",
         icon: (
           <div className="text-xl">
             <TbDropletPlus />
@@ -486,7 +486,7 @@ const navigation: any = [
       },
       {
         name: "لیست چالش‌ها",
-        href: "/kalam-akhar-challenges-list",
+        href: "/harf-akhar-challenges-list",
         icon: (
           <div className="text-xl">
             <TbListDetails />
@@ -548,7 +548,7 @@ const Sidebar = () => {
           <h1
             className={`bg-gradient-to-r primaryGradient from-primary_start to-primary_end bg-clip-text text-transparent text-[2rem] mt-4 font-black items-center text-center font-['iransans-black']`}
           >
-            DoKalam
+            Harf Hesab
           </h1>
         </div>
         <nav className={`w-full flex self-center flex-1 flex-col`}>

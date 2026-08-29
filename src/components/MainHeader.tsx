@@ -49,7 +49,7 @@ const MainHeader = ({
         <div className="flex gap-2 items-center shrink-0">
           {logo && (
             <div className="sm:flex sm:justify-center sm:items-center hidden font-['iransans-md'] bg-gradient-to-r primaryGradient from-primary_start to-primary_end bg-clip-text text-transparent sm:text-[1.6rem] xl:text-[1.7rem] 2xl:text-[2rem] pt-2 font-black select-none">
-              DoKalam
+              Harf Hesab
             </div>
           )}
           {back && (

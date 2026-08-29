@@ -11,7 +11,7 @@ import FilterFooter from "@/components/Footer/FilterFooter";
 import GradientButton from "@/components/GradientButton";
 import { IoSearch } from "react-icons/io5";
 import { RiFilter2Fill } from "react-icons/ri";
-import KalamAkharChallenge from "@/components/ListItems/OnlineGame/KalamAkharChallenge";
+import HarfAkharChallenge from "@/components/ListItems/OnlineGame/HarfAkharChallenge";
 
 
 type SelectedOption = {
@@ -114,7 +114,7 @@ const Page = () => {
       method: "post",
       data: {
         query: `
-            query paginateKalamAkharChallengesForAdmin(
+            query paginateHarfAkharChallengesForAdmin(
               $page : Int,
               $limit : Int,
               $language_ref : ID,
@@ -124,7 +124,7 @@ const Page = () => {
               $filter_visible : Boolean,
               $filter_active : Boolean,
             ){
-                paginateKalamAkharChallengesForAdmin(
+                paginateHarfAkharChallengesForAdmin(
                   page : $page,
                   limit : $limit,
                   language_ref : $language_ref,
@@ -179,7 +179,7 @@ const Page = () => {
       },
     })
       .then((response) => {
-        const riciveData = response.data.data.paginateKalamAkharChallengesForAdmin;
+        const riciveData = response.data.data.paginateHarfAkharChallengesForAdmin;
         if (riciveData.hasNextPage == true) {
           setLoading(false);
           setData(riciveData.list);
@@ -214,7 +214,7 @@ const Page = () => {
       method: "post",
       data: {
         query: `
-            query paginateKalamAkharChallengesForAdmin(
+            query paginateHarfAkharChallengesForAdmin(
               $page : Int,
               $limit : Int,
               $language_ref : ID,
@@ -224,7 +224,7 @@ const Page = () => {
               $filter_visible : Boolean,
               $filter_active : Boolean,
             ){
-                paginateKalamAkharChallengesForAdmin(
+                paginateHarfAkharChallengesForAdmin(
                   page : $page,
                   limit : $limit,
                   language_ref : $language_ref,
@@ -279,7 +279,7 @@ const Page = () => {
       },
     })
       .then((response) => {
-        const riciveData = response.data.data.paginateKalamAkharChallengesForAdmin;
+        const riciveData = response.data.data.paginateHarfAkharChallengesForAdmin;
         if (riciveData.hasNextPage == true) {
           setData([...data, ...riciveData.list]);
           setPage(riciveData.nextPage);
@@ -505,7 +505,7 @@ const Page = () => {
             >
               {data?.map((item: any, index: number) => (
                 <li key={index.toString()} className="flex"> 
-                  <KalamAkharChallenge
+                  <HarfAkharChallenge
                     _id={item?._id}
                     title={item?.title}
                     description={item?.description}

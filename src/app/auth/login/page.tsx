@@ -172,7 +172,7 @@ export default function Home() {
         className=" flex-1 h-full flex flex-col justify-center items-center w-full mt-16 md:mt-0"
         style={{ fontFamily: "iransans-black" }}
       >
-        <div className="sm:text-5xl lg:text-6xl xl:text-7xl text-3xl primaryGradient">DoKalam</div>
+        <div className="sm:text-5xl lg:text-6xl xl:text-7xl text-3xl primaryGradient">Harf Hesab</div>
         <div className="sm:text-2xl xl:text-4xl text-base primaryGradient mt-4 pb-1" style={{ wordSpacing: ".20rem" }}>
           پنل مدیریت
         </div>

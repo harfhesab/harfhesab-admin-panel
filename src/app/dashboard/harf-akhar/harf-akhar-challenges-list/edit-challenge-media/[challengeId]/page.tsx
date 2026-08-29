@@ -46,10 +46,10 @@ const Page = () => {
       method: "post",
       data: {
         query: `
-            query getKalamAkharChallengeInformationForAdmin(
+            query getHarfAkharChallengeInformationForAdmin(
               $_id : ID!,
             ){
-                getKalamAkharChallengeInformationForAdmin(
+                getHarfAkharChallengeInformationForAdmin(
                   _id : $_id,
                 ) {
                     _id,
@@ -63,7 +63,7 @@ const Page = () => {
         },
       },
     }).then(async (response) => {
-        const data = response.data.data.getKalamAkharChallengeInformationForAdmin;
+        const data = response.data.data.getHarfAkharChallengeInformationForAdmin;
         if (data) {
           setData(data)
           setLoading2(false)
@@ -84,12 +84,12 @@ const Page = () => {
   const deletePreviousMedia = async ({path, type}:{path:string, type:string}) => {
     let data = {
       query: `
-          mutation deleteMediaFromKalamAkharChallenge(
+          mutation deleteMediaFromHarfAkharChallenge(
             $_id : ID!,
             $path : String!,
             $type : String!,
           ){
-            deleteMediaFromKalamAkharChallenge(
+            deleteMediaFromHarfAkharChallenge(
               _id : $_id,
               path : $path,
               type : $type,
@@ -111,7 +111,7 @@ const Page = () => {
       data: data,
     })
       .then(async (response) => {
-        const res = response.data?.data?.deleteMediaFromKalamAkharChallenge
+        const res = response.data?.data?.deleteMediaFromHarfAkharChallenge
         if (res?.status == 200) {
             toast.success(res?.message, {
               position: "top-center",
@@ -171,12 +171,12 @@ const Page = () => {
     setLoading(true)
     let queryData = {
       query: `
-          mutation addNewMediaToKalamAkharChallenge(
+          mutation addNewMediaToHarfAkharChallenge(
             $_id : ID!,
             $media : [FileInput],
             $voice : [FileInput],
           ){
-            addNewMediaToKalamAkharChallenge(
+            addNewMediaToHarfAkharChallenge(
               _id : $_id,
               media : $media,
               voice : $voice,
@@ -241,8 +241,8 @@ const Page = () => {
     })
       .then(async (response) => {
         setLoading(false);
-        if (response.data?.data?.addNewMediaToKalamAkharChallenge?.status == 200) {
-            toast.success(response.data?.data?.addNewMediaToKalamAkharChallenge?.message, {
+        if (response.data?.data?.addNewMediaToHarfAkharChallenge?.status == 200) {
+            toast.success(response.data?.data?.addNewMediaToHarfAkharChallenge?.message, {
               position: "top-center",
               autoClose: 3000,
               hideProgressBar: false,

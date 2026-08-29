@@ -17,7 +17,7 @@ import moment from "moment-jalaali";
 moment.locale('fa');
 moment.loadPersian({ usePersianDigits: false, dialect: "persian-modern" });
 
-const KalamAkharChallenge = ({
+const HarfAkharChallenge = ({
     _id,
     title,
     description,
@@ -212,7 +212,7 @@ const KalamAkharChallenge = ({
                     <button
                         className="block flex flex-row items-center gap-3 w-full text-right px-4 py-3 text-sm text-text2 dark:text-text2_dark hover:bg-border dark:hover:bg-border_dark transition-colors"
                         onClick={() => {
-                        router.push(`/dashboard/kalam-akhar/kalam-akhar-challenges-list/edit-challenge/${challengeId}`)
+                        router.push(`/dashboard/harf-akhar/harf-akhar-challenges-list/edit-challenge/${challengeId}`)
                         }}
                     >
                         <FaPencil className="text-text4 dark:text-text4_dark text-lg"/>
@@ -221,7 +221,7 @@ const KalamAkharChallenge = ({
                     <button
                         className="block flex flex-row items-center gap-3 w-full text-right px-4 py-3 text-sm text-text2 dark:text-text2_dark hover:bg-border dark:hover:bg-border_dark transition-colors"
                         onClick={() => {
-                            router.push(`/dashboard/kalam-akhar/kalam-akhar-challenges-list/edit-challenge-media/${challengeId}`)
+                            router.push(`/dashboard/harf-akhar/harf-akhar-challenges-list/edit-challenge-media/${challengeId}`)
                         }}
                     >
                         <FaImage className="text-text4 dark:text-text4_dark text-lg"/>
@@ -529,4 +529,4 @@ const KalamAkharChallenge = ({
   );
 };
 
-export default KalamAkharChallenge;
+export default HarfAkharChallenge;
