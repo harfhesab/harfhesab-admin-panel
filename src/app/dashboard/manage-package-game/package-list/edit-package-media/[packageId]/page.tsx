@@ -598,7 +598,7 @@ pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full shadow
           با فعال بودن این گزینه، بعد از ویرایش، ورژن آپدیت سند (version_updated) افزایش میابد.
         </p>
       </div>
-      <Footer buttonFn={registerAndConfirm} buttonText="بارگذاری موارد چدید" loadingButton={loading} classes="md:!mr-72 !justify-end" />
+      <Footer buttonFn={registerAndConfirm} buttonText="بارگذاری موارد جدید" loadingButton={loading} classes="md:!mr-72 !justify-end" />
       <ShowImageModal
         ref={(Ref) => {
           ShowImageModalHelper.setRef(Ref);

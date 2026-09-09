@@ -18,7 +18,7 @@ const ImageComponent = ({
   baseURI?: boolean;
 }) => {
   return (
-    <div className={`${parentclasses} relative`}>
+    <div onClick={()=>{console.log(`${Globals.uri}${src}`)}} className={`${parentclasses} relative`}>
       <Image
         className={`${imageClasses} inset-0 h-full w-full rounded-md bg-gray-50 object-cover`}
         src={baseURI ? `${Globals.uri}${src}` : src}
