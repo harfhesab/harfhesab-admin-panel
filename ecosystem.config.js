@@ -1,9 +1,13 @@
+const { loadEnvConfig } = require('@next/env');
+
+loadEnvConfig(process.cwd());
+
 module.exports = {
   apps: [
     {
       name: 'admin-panel',
       script: 'node_modules/next/dist/bin/next',
-      args: 'start -p 3000',  // Ensure this matches your desired port
+      args: `start -p ${process.env.NEXT_PUBLIC_PORT}`,  // Ensure this matches your desired port
       instances: 'max',
       exec_mode: 'cluster',
       autorestart: true,

@@ -1,5 +1,5 @@
 const url = process.env.NEXT_PUBLIC_URL;
-const uri = process.env.NEXT_PUBLIC_URI
+const uri = process.env.NEXT_PUBLIC_URI;
 
 const exports = {
   store_name: "direct_download",
