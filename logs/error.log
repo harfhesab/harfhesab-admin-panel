@@ -2559,3 +2559,415 @@
 2026-09-09T04:56:26:  ⨯ upstream image response failed for https://dl.harfhesab.com/stage-game-season/2026/5/10/1778363471227_tr-1.png 404
 2026-09-09T04:56:45:  ⨯ upstream image response failed for https://dl.harfhesab.com/stage-game-season/2026/5/11/1778458891001_tr-2.png 404
 2026-09-09T04:56:51:  ⨯ upstream image response failed for https://dl.harfhesab.com/stage-game-season/2026/5/11/1778458891001_tr-2.png 404
+2026-09-12T11:55:27:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788903847363_heydar-baba-2-banner.png 404
+2026-09-12T11:55:27:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788906182151_name-be-neshan-banner.png 404
+2026-09-12T11:55:27: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:27: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:27:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788904501125_heydar-baba-1-banner.png 404
+2026-09-12T11:55:27:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788903065457_dara-shaban-banner.png 404
+2026-09-12T11:55:27:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910478175_didar-sam-rostam-banner.png 404
+2026-09-12T11:55:27: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:27: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:27: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:28:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788907586706_entekhab-rakhsh-banner.png 404
+2026-09-12T11:55:28: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:29:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910923599_rostamzad-banner.png 404
+2026-09-12T11:55:29: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:55:29:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788900378760_proud-tree-banner.png 404
+2026-09-12T11:55:29: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788906182151_name-be-neshan-banner.png 404
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788903847363_heydar-baba-2-banner.png 404
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788903065457_dara-shaban-banner.png 404
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910478175_didar-sam-rostam-banner.png 404
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788907586706_entekhab-rakhsh-banner.png 404
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910923599_rostamzad-banner.png 404
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:56:47:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788904501125_heydar-baba-1-banner.png 404
+2026-09-12T11:56:47: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:57:51:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788906182151_name-be-neshan-banner.png 404
+2026-09-12T11:57:51: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:57:51:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788904501125_heydar-baba-1-banner.png 404
+2026-09-12T11:57:51: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:57:51:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788907586706_entekhab-rakhsh-banner.png 404
+2026-09-12T11:57:51: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:57:51:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910478175_didar-sam-rostam-banner.png 404
+2026-09-12T11:57:51:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910923599_rostamzad-banner.png 404
+2026-09-12T11:57:51: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:57:51: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:59:16:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788907586706_entekhab-rakhsh-banner.png 404
+2026-09-12T11:59:16: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:59:16:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910478175_didar-sam-rostam-banner.png 404
+2026-09-12T11:59:16:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910923599_rostamzad-banner.png 404
+2026-09-12T11:59:16: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T11:59:16: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T12:00:20:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-banner/2026/9/8/1788910923599_rostamzad-banner.png 404
+2026-09-12T12:00:20: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:16:05:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910480788_didar-sam-rostam-icon.png 404
+2026-09-12T14:16:05: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:17:20:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910480788_didar-sam-rostam-icon.png 404
+2026-09-12T14:17:20: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:49:23:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910925148_rostamzad-icon.png 404
+2026-09-12T14:49:23: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:49:23:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910480788_didar-sam-rostam-icon.png 404
+2026-09-12T14:49:23: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:53:25:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910480788_didar-sam-rostam-icon.png 404
+2026-09-12T14:53:25: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:53:25:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910925148_rostamzad-icon.png 404
+2026-09-12T14:53:25:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788907588438_entekhab-rakhsh-icon.png 404
+2026-09-12T14:53:25: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:53:25: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:55:29:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910480788_didar-sam-rostam-icon.png 404
+2026-09-12T14:55:29: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-12T14:55:29:  ⨯ upstream image response failed for https://dl.harfhesab.com/c938566/package-game-icon/2026/9/8/1788910925148_rostamzad-icon.png 404
+2026-09-12T14:55:29: ImageError: "url" parameter is valid but upstream response is invalid
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:532:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  statusCode: 404
+}
+2026-09-15T12:45:53: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 49864,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 232,
+      bytesRead: 168097
+    }
+  }
+}
+2026-09-15T21:02:06:  ⨯ upstream image response failed for https://dl.harfhesab.com/kalam-akhar-challenge-media/2026/7/6/1783301309889_se-2.png 404
+2026-09-21T01:59:28:  ⨯ Error: Cannot find module 'D:\project\web\admin-panel\.next\server\app\dashboard\message-management\private-message-list\page.js'
+Require stack:
+- D:\project\web\admin-panel\node_modules\next\dist\server\require.js
+- D:\project\web\admin-panel\node_modules\next\dist\server\next-server.js
+- D:\project\web\admin-panel\node_modules\next\dist\server\next.js
+- D:\project\web\admin-panel\node_modules\next\dist\server\lib\start-server.js
+- D:\project\web\admin-panel\node_modules\next\dist\cli\next-start.js
+    at Function.call (node:internal/modules/cjs/loader:1401:15)
+    at D:\project\web\admin-panel\node_modules\next\src\server\require-hook.ts:51:34
+    at Module.call (C:\Users\kamra\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+    at Module.mod.require (D:\project\web\admin-panel\node_modules\next\src\server\require-hook.ts:70:26)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (D:\project\web\admin-panel\node_modules\next\src\server\require.ts:127:9)
+    at D:\project\web\admin-panel\node_modules\next\src\server\load-components.ts:191:16
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at processTimers (node:internal/timers:520:9)
+    at loadComponentsImpl (D:\project\web\admin-panel\node_modules\next\src\server\load-components.ts:190:24) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\next-server.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\next.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\lib\\start-server.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\cli\\next-start.js'
+  ]
+}
+2026-09-21T01:59:28:  ⨯ Error: Cannot find module 'D:\project\web\admin-panel\.next\server\pages\_error.js'
+Require stack:
+- D:\project\web\admin-panel\node_modules\next\dist\server\require.js
+- D:\project\web\admin-panel\node_modules\next\dist\server\next-server.js
+- D:\project\web\admin-panel\node_modules\next\dist\server\next.js
+- D:\project\web\admin-panel\node_modules\next\dist\server\lib\start-server.js
+- D:\project\web\admin-panel\node_modules\next\dist\cli\next-start.js
+    at Function.call (node:internal/modules/cjs/loader:1401:15)
+    at D:\project\web\admin-panel\node_modules\next\src\server\require-hook.ts:51:34
+    at Module.call (C:\Users\kamra\AppData\Roaming\npm\node_modules\pm2\node_modules\require-in-the-middle\index.js:81:25)
+    at Module.mod.require (D:\project\web\admin-panel\node_modules\next\src\server\require-hook.ts:70:26)
+    at require (node:internal/modules/helpers:135:16)
+    at requirePage (D:\project\web\admin-panel\node_modules\next\src\server\require.ts:127:9)
+    at D:\project\web\admin-panel\node_modules\next\src\server\load-components.ts:191:16
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at processTimers (node:internal/timers:520:9)
+    at loadComponentsImpl (D:\project\web\admin-panel\node_modules\next\src\server\load-components.ts:190:24) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\require.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\next-server.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\next.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\server\\lib\\start-server.js',
+    'D:\\project\\web\\admin-panel\\node_modules\\next\\dist\\cli\\next-start.js'
+  ]
+}

@@ -10,6 +10,12 @@ export interface PackageListModalInterface {
   previousSelected?: { title: string[]; _id: string[]; image: string[]};
 }
 
+export interface HarfAkharListModalInterface {
+  buttons?: { onClickFn?: (data: any) => any; buttonText?: string; type: string }[];
+  numberSelected?: number;
+  previousSelected?: { title: string[]; _id: string[]; image: string[]};
+}
+
 export interface UserListModalInterface {
   buttons?: { onClickFn?: (data: any) => any; buttonText?: string; type: string }[];
   numberSelected?: number;
