@@ -256,7 +256,7 @@ const HarfAkharList = forwardRef((_, ref) => {
     if (numberSelected == 1) {
       const _id = item._id;
       const title = item.title;
-      const image = item.icon_image;
+      const image = item.media[0].path;
       setExtendedState({
         _id: [_id],
         title: [title],
@@ -266,7 +266,7 @@ const HarfAkharList = forwardRef((_, ref) => {
       if (extendedState._id.length < numberSelected) {
         const _id = item._id;
         const title = item.title;
-        const image = item.icon_image;
+        const image = item.media[0].path;
         extendedState._id.push(_id);
         extendedState.title.push(title);
         extendedState.image.push(image)

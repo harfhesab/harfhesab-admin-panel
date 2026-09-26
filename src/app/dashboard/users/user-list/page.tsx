@@ -53,6 +53,9 @@ const Page = () => {
                       first_name,
                       last_name,
                       number_coins,
+                      last_seen,
+                      number_open_app,
+                      createdAt
                     },
                     hasNextPage,
                     nextPage
@@ -119,6 +122,9 @@ const Page = () => {
                       first_name,
                       last_name,
                       number_coins,
+                      last_seen,
+                      number_open_app,
+                      createdAt
                     },
                     hasNextPage,
                     nextPage
@@ -274,6 +280,9 @@ const Page = () => {
                     last_name={item?.last_name}
                     phone={item?.phone}
                     number_coins={item?.number_coins}
+                    last_seen={item?.last_seen}
+                    number_open_app={item?.number_open_app}
+                    createdAt={item?.createdAt}
                   />
                 </div>
               ))}

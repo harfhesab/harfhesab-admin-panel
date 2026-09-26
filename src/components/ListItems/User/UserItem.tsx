@@ -1,23 +1,24 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import { useRouter } from "next/navigation";
-import ImageComponent from "@/components/ImageComponent";
-import { HiDotsVertical, HiEyeOff, HiEye, HiOutlineEyeOff, HiOutlineTrash } from "react-icons/hi";
-import { IoNotificationsOff, IoNotifications, IoDiamondSharp } from "react-icons/io5";
-import { FaUserLarge, FaCoins} from "react-icons/fa6";
-import axios from "axios";
-import { toast } from "react-toastify";
-import DialogHelper from "@/components/Dialog/DialogHelper";
+import { FaUserLarge} from "react-icons/fa6";
 import GradientButton from "@/components/GradientButton";
 import { priceDigitSeperator } from "@/utils/PriceDigitSeparator";
+import { getTime } from "@/utils/GetTime";
+import moment from "moment-jalaali";
+moment.locale('fa');
+moment.loadPersian({ usePersianDigits: false, dialect: "persian-modern" });
 
 const UserItem = ({
-  _id,
-  type,
-  phone,
-  user_name,
-  first_name,
-  last_name,
-  number_coins,
+    _id,
+    type,
+    phone,
+    user_name,
+    first_name,
+    last_name,
+    number_coins,
+    last_seen,
+    number_open_app,
+    createdAt,
 }: {
   _id: string;
   type: string;
@@ -26,6 +27,9 @@ const UserItem = ({
   first_name?: string;
   last_name?: string;
   number_coins: number;
+  last_seen?: Date;
+  number_open_app?: number;
+  createdAt: Date;
 }) => {
     const router = useRouter();
     const userId = _id
@@ -62,9 +66,26 @@ const UserItem = ({
                     {last_name??""}
                 </p>
             </div>
-            <p className="text-[12px] 2xl:text-[14px] font-['iransans-md'] text-warning line-clmp-1">
-                <span className="text-text5 dark:text-text5_dark">تعداد سکه : </span>
-                {number_coins?priceDigitSeperator(number_coins):""}
+            <div className="flex flex-row items-center gap-4">
+                <p className="text-[12px] 2xl:text-[14px] font-['iransans-md'] text-warning line-clmp-1 w-[40%]">
+                    <span className="text-text5 dark:text-text5_dark">تعداد سکه : </span>
+                    {number_coins?priceDigitSeperator(number_coins):""}
+                </p>
+                <p className="text-[12px] 2xl:text-[14px] font-['iransans-md'] text-warning line-clmp-1 w-[40%]">
+                    <span className="text-text5 dark:text-text5_dark">تعداد بازگشت : </span>
+                    {number_open_app?priceDigitSeperator(number_open_app):""}
+                </p>
+            </div>
+            <p className="text-[10px] 2xl:text-[12px] font-['iransans-md'] text-info line-clmp-1">
+                <span className="text-text5 dark:text-text5_dark">آخرین بازدید : </span>
+                {
+                    last_seen&&
+                    `( ${getTime(last_seen)}   ___  ${moment(last_seen).format("jYYYY/jMM/jDD")} )`
+                }
+            </p>
+            <p className="text-[10px] 2xl:text-[12px] font-['iransans-md'] text-info line-clmp-1">
+                <span className="text-text5 dark:text-text5_dark">تاریخ عضویت در بازی : </span>
+            {`( ${getTime(createdAt)}   ___  ${moment(createdAt).format("jYYYY/jMM/jDD")} )`}
             </p>
             <div className="flex flex-row w-full items-center justify-center">
                 <GradientButton

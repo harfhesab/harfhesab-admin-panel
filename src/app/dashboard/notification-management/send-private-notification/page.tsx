@@ -37,6 +37,7 @@ import {
 } from "react-icons/md";
 import HarfAkharList from "@/components/HarfAkharList/HarfAkharList";
 import HarfAkharListHelper from "@/components/HarfAkharList/HarfAkharListHelper";
+import Globals from "@/utils/Globals";
 
 type HarfAkharSelectedInfo = {
   _id: string;
@@ -98,6 +99,15 @@ const TTL_OPTIONS = [
   { label: "7 روز", value: String(7 * 24 * 60 * 60) },
   { label: "28 روز (حداکثر)", value: String(28 * 24 * 60 * 60) },
 ];
+
+const SCREEN_OPTIONS = [
+  { label: "بدون صفحه", value: "" },
+  { label: "چالش حرف آخر", value: "HarfAkharInformation" },
+  { label: "لیست چالش‌های حرف آخر", value: "HarfAkharBottomTab" },
+  { label: "اطلاعات بستهٔ داستانی", value: "PackageInformation" },
+  { label: "لیست اعلانات", value: "Notification" },
+  { label: "لیست پیام‌ها", value: "MessageInApp" },
+]
 
 const Page = () => {
   const [title, setTitle] = useState("");
@@ -266,6 +276,8 @@ const Page = () => {
           type: "bold",
           onClickFn: ({ data }: { data: any }) => {
             setHarfAkharSelected({ _id: data._id[0], title: data.title[0], image: data.image[0] })
+            setNotificationImage(`${Globals.uri}${data.image[0]}`)
+            setDataItemId(data._id[0])
             HarfAkharListHelper.closeModal();
           },
         },
@@ -288,6 +300,8 @@ const Page = () => {
           type: "bold",
           onClickFn: ({ data }: { data: any }) => {
             setPackageSelected({ _id: data._id[0], title: data.title[0], image: data.image[0] })
+            setNotificationImage(`${Globals.uri}${data.image[0]}`)
+            setDataItemId(data._id[0])
             PackageListHelper.closeModal();
           },
         },
@@ -317,6 +331,7 @@ const Page = () => {
       ],
     });
   }
+  const deleteHarfAkharChallengeItem = () => { setHarfAkharSelected(null); };
   const deletePackageItem = () => { setPackageSelected(null); };
   const deleteUserItem = () => { setUserSelected(null); };
 
@@ -338,6 +353,8 @@ const Page = () => {
           type: "bold",
           onClickFn: ({ data }: { data: any }) => {
             setFreeCoinSelected({ _id: data._id[0], type: data.type[0], title: data.title[0], icon_image: data.icon_image[0], number_coin: data.number_coin[0] })
+            setNotificationImage(`${Globals.uri}${data.image[0]}`)
+            setDataItemId(data._id[0])
             FreeCoinListHelper.closeModal();
           },
         },
@@ -364,6 +381,8 @@ const Page = () => {
           type: "bold",
           onClickFn: ({ data }: { data: any }) => {
             setFreeSubscriptionSelected({ _id: data._id[0], type: data.type[0], title: data.title[0], icon_image: data.icon_image[0], duration: data.duration[0] })
+            setNotificationImage(`${Globals.uri}${data.image[0]}`)
+            setDataItemId(data._id[0])
             FreeCoinListHelper.closeModal();
           },
         },
@@ -590,14 +609,20 @@ pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full shadow
                 <MdImage size={15} className="text-info" />
                 آدرس تصویر نوتیفیکیشن
               </span>
-              <Input
-                id="notification-image"
-                value={notificationImage}
-                changeState={setNotificationImage}
-                classes="w-full"
-                inputStyles="!text-sm !h-[42px]"
-                placeholder="https://..."
-              />
+              <div className="flex flex-row items-center gap-2">
+                <Input
+                  id="notification-image"
+                  value={notificationImage}
+                  changeState={setNotificationImage}
+                  classes="w-full"
+                  inputStyles="!text-sm !h-[42px]"
+                  placeholder="https://..."
+                />
+                {
+                  notificationImage?.length > 10 && (notificationImage.includes("http://") || notificationImage.includes("https://"))&&
+                  <ImageComponent src={notificationImage} baseURI={false} alt={"file_photos"} parentclasses="h-[40px] w-[40px] cursor-pointer" />
+                }
+              </div>
             </label>
           </div>
 
@@ -615,12 +640,40 @@ pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full shadow
                 <Input id="data-type" value={dataType} changeState={setDataType} classes="w-full" inputStyles="!text-sm !h-[42px]" placeholder="مثال: package" />
               </label>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               <label className="font-['iransans-md'] text-right text-text6 dark:text-text6_dark text-[13px]" htmlFor="data-screen">
                 <span className="flex items-center gap-1.5 mb-1.5">
                   <MdSmartphone size={15} className="text-info" />
                   صفحه (screen)
                 </span>
-                <Input id="data-screen" value={dataScreen} changeState={setDataScreen} classes="w-full" inputStyles="!text-sm !h-[42px]" placeholder="مثال: PackageDetail" />
+                <select
+                  id="data-screen"
+                  value={dataScreen}
+                  onChange={(e) => setDataScreen(e.target.value)}
+                  className="w-full h-[42px] px-3 rounded-md border border-border dark:border-border_dark bg-background dark:bg-background_dark text-text dark:text-text_dark text-[13px] font-['iransans-md'] outline-none focus:border-info transition-colors cursor-pointer"
+                >
+                  {SCREEN_OPTIONS.map((opt) => (
+                    <option key={opt.value} value={opt.value}>{opt.label}</option>
+                  ))}
+                </select>
               </label>
 
               <label className="font-['iransans-md'] text-right text-text6 dark:text-text6_dark text-[13px]" htmlFor="data-item-id">
@@ -654,7 +707,7 @@ pointer-events-none inline-block h-[22px] w-[22px] transform rounded-full shadow
               }
               <div className="absolute top-0 w-full flex justify-between px-1 pt-1">
                 <div
-                  onClick={(e: any) => { e.stopPropagation(); deletePackageItem(); }}
+                  onClick={(e: any) => { e.stopPropagation(); deleteHarfAkharChallengeItem(); }}
                   className="flex justify-center items-center rounded transition text-white bg-[#00000099] sm:hover:bg-[#33333370] text-lg w-6 h-6"
                 >
                   <BiTrash />

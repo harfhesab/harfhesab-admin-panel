@@ -71,7 +71,7 @@ const Page = () => {
                     type,
                     phone,
                     user_name,
-                    user_login{
+                    user_login_info{
                       _id,
                       active_session,
                       login_date,
@@ -143,7 +143,6 @@ const Page = () => {
       },
     }).then(async (response) => {
         const data = response.data.data.getUserInformationForAdmin;
-        console.log(data)
         if (data) {
           setData(data)
           setLoading(false)
@@ -248,8 +247,8 @@ const Page = () => {
               {
                 data?.last_seen?
                 `( ${getTime(data?.last_seen)}   ___  ${moment(data?.last_seen).format("jYYYY/jMM/jDD")} )`
-                :data?.user_login?.length > 0&&
-                `( ${getTime(data?.user_login[0]?.last_seen)}   ___  ${moment(data?.user_login[0]?.last_seen).format("jYYYY/jMM/jDD")} )`
+                :data?.user_login_info?.length > 0&&
+                `( ${getTime(data?.user_login_info[0]?.last_seen)}   ___  ${moment(data?.user_login_info[0]?.last_seen).format("jYYYY/jMM/jDD")} )`
               }
           </p>
           <p className="text-[16px] 2xl:text-[18px] font-['iransans-md'] text-info line-clmp-1">
@@ -321,7 +320,7 @@ const Page = () => {
           </p>
           <p className="text-[16px] 2xl:text-[18px] font-['iransans-md'] text-text dark:text-text_dark line-clmp-1 mt-6">{"اطلاعات دستگاه"}</p>
           {
-            data?.user_login?.map((item:any, index:number)=>(
+            data?.user_login_info?.map((item:any, index:number)=>(
               <div key={index.toString()} className="flex flex-col w-full bg-background2 dark:bg-background2_dark px-4 py-4 border border-primary rounded-md gap-2">
                 <p className="text-[14px] 2xl:text-[16px] font-['iransans-md'] text-text dark:text-text_dark line-clmp-1">
                     {item?.active_session == true?"دستگاه فعال":"دستگاه غیر فعال"}
