@@ -5,6 +5,7 @@ import GradientButton from "@/components/GradientButton";
 import { priceDigitSeperator } from "@/utils/PriceDigitSeparator";
 import { getTime } from "@/utils/GetTime";
 import moment from "moment-jalaali";
+import { formatRelativeTime } from "@/utils/relativeTime";
 moment.locale('fa');
 moment.loadPersian({ usePersianDigits: false, dialect: "persian-modern" });
 
@@ -76,16 +77,21 @@ const UserItem = ({
                     {number_open_app?priceDigitSeperator(number_open_app):""}
                 </p>
             </div>
-            <p className="text-[10px] 2xl:text-[12px] font-['iransans-md'] text-info line-clmp-1">
+            <p className="text-[10px] 2xl:text-[12px] font-['iransans-md'] text-text6 dark:text-text6_dark line-clmp-1">
                 <span className="text-text5 dark:text-text5_dark">آخرین بازدید : </span>
+                {
+                    last_seen&&
+                    <span className="text-info">{` ( ${formatRelativeTime(last_seen)} ) `}</span>
+                }
                 {
                     last_seen&&
                     `( ${getTime(last_seen)}   ___  ${moment(last_seen).format("jYYYY/jMM/jDD")} )`
                 }
             </p>
-            <p className="text-[10px] 2xl:text-[12px] font-['iransans-md'] text-info line-clmp-1">
+            <p className="text-[10px] 2xl:text-[12px] font-['iransans-md'] text-text6 dark:text-text6_dark line-clmp-1">
                 <span className="text-text5 dark:text-text5_dark">تاریخ عضویت در بازی : </span>
-            {`( ${getTime(createdAt)}   ___  ${moment(createdAt).format("jYYYY/jMM/jDD")} )`}
+                <span className="text-info">{` ( ${formatRelativeTime(createdAt)} ) `}</span>
+                {`( ${getTime(createdAt)}   ___  ${moment(createdAt).format("jYYYY/jMM/jDD")} )`}
             </p>
             <div className="flex flex-row w-full items-center justify-center">
                 <GradientButton
