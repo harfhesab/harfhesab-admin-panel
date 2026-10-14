@@ -99,21 +99,23 @@ const validateStage = (
     group.push(entry);
     seen.set(entry.normalized, group);
   }
-  for (const group of seen.values()) {
+
+  Array.from(seen.values()).forEach((group) => {
     if (group.length > 1) {
       group.forEach((entry) => invalidKeys.add(entry.key));
+
       group.slice(1).forEach((entry) => {
         errors.push(`کلمه «${entry.word}» تکراری است.`);
       });
     }
-  }
+  });
 
   // 3. ساخته‌شدن هر کلمه از حروف مرحله
   const available = countLetters(safeLetters.map(normalizeText));
 
   for (const entry of entries) {
     const needed = countLetters(Array.from(entry.normalized));
-    for (const [letter, count] of needed) {
+    needed.forEach((count, letter) => {
       const have = available.get(letter) ?? 0;
       if (count > have) {
         invalidKeys.add(entry.key);
@@ -121,7 +123,7 @@ const validateStage = (
           `کلمه «${entry.word}» در آرایه ${entry.arrayName} به ${count} حرف «${letter}» نیاز دارد، اما فقط ${have} عدد از این حرف در آرایه letters موجود است.`,
         );
       }
-    }
+    });
   }
 
   return {
