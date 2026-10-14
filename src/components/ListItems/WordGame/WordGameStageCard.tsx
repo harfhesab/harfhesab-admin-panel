@@ -59,9 +59,9 @@ const normalizeText = (text: string): string =>
 
 const countLetters = (chars: Iterable<string>): Map<string, number> => {
   const counts = new Map<string, number>();
-  for (const ch of chars) {
+  Array.from(chars).forEach((ch) => {
     counts.set(ch, (counts.get(ch) ?? 0) + 1);
-  }
+  });
   return counts;
 };
 
