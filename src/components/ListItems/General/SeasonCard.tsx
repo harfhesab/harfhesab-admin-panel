@@ -31,7 +31,7 @@ const SeasonCard = ({
   publication_status,
   completion_status,
 }: {
-  type: "stage-game" | "package-game";
+  type: "stage-game" | "package-game" | "word-game";
   _id: string;
   rtl: boolean;
   title: string;
@@ -59,7 +59,7 @@ const SeasonCard = ({
   number_stage: number;
   is_visible: boolean;
   is_active: boolean;
-  content_source_type: string;
+  content_source_type?: string;
   publication_status: string;
   completion_status: string;
 }) => {
@@ -115,6 +115,8 @@ const SeasonCard = ({
                         router.push(`/dashboard/manage-stage-game/season-list/edit-season/${seasonId}`)
                       } else if(type == "package-game"){
                         router.push(`/dashboard/manage-package-game/season-list/edit-season/${seasonId}`)
+                      } else if(type == "word-game"){
+                        router.push(`/dashboard/manage-word-game/season-list/edit-season/${seasonId}`)
                       }
                     }}
                   >
@@ -128,6 +130,8 @@ const SeasonCard = ({
                         router.push(`/dashboard/manage-stage-game/season-list/edit-season-media/${seasonId}`)
                       } else if(type == "package-game"){
                         router.push(`/dashboard/manage-package-game/season-list/edit-season-media/${seasonId}`)
+                      } else if(type == "word-game"){
+                        router.push(`/dashboard/manage-word-game/season-list/edit-season-media/${seasonId}`)
                       }
                     }}
                   >
@@ -223,9 +227,12 @@ const SeasonCard = ({
       </div> 
       <div className="flex flex-col gap-4">
         <div className="mt-2 flex flex-wrap gap-2 text-xs font-['iransans-md'] text-text dark:text-text_dark">
-          <span className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">
-            منبع: {content_source_type}
-          </span>
+          {
+            content_source_type&&
+            <span className="bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded">
+              منبع: {content_source_type}
+            </span>
+          }
           <span className="bg-yellow-100 dark:bg-yellow-800 px-2 py-1 rounded">
             انتشار: {publication_status}
           </span>

@@ -4,8 +4,8 @@ import SideBarItem from "./SideBarItem";
 import { usePathname } from "next/navigation";
 import { AiFillDashboard } from "react-icons/ai";
 import { RiApps2Fill, RiBook2Fill } from "react-icons/ri";
-import { TbCoins, TbDiaboloPlus, TbHexagonalPrismPlus, TbBellPlus, TbMessagePlus, TbListSearch, TbSettings, TbDropletPlus, TbTagPlus, TbSearch, TbListDetails  } from "react-icons/tb";
-import { FaCoins, FaDiceD6, FaUsers } from "react-icons/fa6";
+import { TbCoins, TbDiaboloPlus, TbHexagonalPrismPlus, TbBellPlus, TbMessagePlus, TbListSearch, TbSettings, TbDropletPlus, TbTagPlus, TbSearch, TbListDetails, TbHexagonPlus2  } from "react-icons/tb";
+import { FaCoins, FaDiceD6, FaGamepad, FaUsers } from "react-icons/fa6";
 import { BsCloudPlus, BsCloudPlusFill } from "react-icons/bs";
 import { LuClipboardList } from "react-icons/lu";
 import { MdListAlt, MdPayments } from "react-icons/md";
@@ -531,6 +531,75 @@ const navigation: any = [
           icon: (
             <div className="text-xl">
               <TbTagPlus />
+            </div>
+          ),
+        },
+      ],
+    },
+    {
+      name: "ثبت محتوای بازی کلمات",
+      href: "/dashboard/word-game",
+      icon: (
+        <div className="text-xl">
+          <FaGamepad />
+        </div>
+      ),
+      head:true,
+      children: [
+        {
+          name: "تنظیمات بازی مرحله‌ای",
+          href: "/setting",
+          icon: (
+            <div className="text-xl">
+              <TbSettings />
+            </div>
+          ),
+        },
+        {
+          name: "ثبت فصل جدید",
+          href: "/register-new-season",
+          icon: (
+            <div className="text-xl">
+              <TbHexagonPlus2 />
+            </div>
+          ),
+        },
+        {
+          name: "ثبت مرحله جدید",
+          href: "/register-new-stage",
+          icon: (
+            <div className="text-xl">
+              <TbHexagonPlus2 />
+            </div>
+          ),
+        },
+      ],
+    },
+    {
+      name: "مدیریت محتوای بازی کلمات",
+      href: "/dashboard/manage-word-game",
+      icon: (
+        <div className="text-xl">
+          <FaGamepad />
+        </div>
+      ),
+      head:true,
+      children: [
+        {
+          name: "لیست فصل‌ها",
+          href: "/season-list",
+          icon: (
+            <div className="text-xl">
+              <LuClipboardList />
+            </div>
+          ),
+        },
+        {
+          name: "لیست مراحل",
+          href: "/stage-list",
+          icon: (
+            <div className="text-xl">
+              <LuClipboardList />
             </div>
           ),
         },
