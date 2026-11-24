@@ -23435,3 +23435,358 @@ Require stack:
 2026-11-24T13:59:58:  ✓ Ready in 7s
 2026-11-24T13:59:58:  ✓ Ready in 7.1s
 2026-11-24T13:59:58:  ✓ Ready in 7.1s
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   ▲ Next.js 14.2.2
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:14:   - Local:        http://localhost:3000
+2026-11-24T23:20:14: 
+2026-11-24T23:20:14:  ✓ Starting...
+2026-11-24T23:20:15:  ✓ Ready in 2.3s
+2026-11-24T23:20:15:  ✓ Ready in 2.6s
+2026-11-24T23:20:15:  ✓ Ready in 2.7s
+2026-11-24T23:20:15:  ✓ Ready in 2.7s
+2026-11-24T23:20:15:  ✓ Ready in 2.8s
+2026-11-24T23:20:15:  ✓ Ready in 2.5s
+2026-11-24T23:20:15:  ✓ Ready in 2.8s
+2026-11-24T23:20:15:  ✓ Ready in 2.8s
+2026-11-25T00:22:40: TypeError: fetch failed
+    at node:internal/deps/undici/undici:13510:13
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at fetchExternalImage (D:\project\web\admin-panel\node_modules\next\src\server\image-optimizer.ts:528:15)
+    at NextNodeServer.imageOptimizer (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:629:11)
+    at cacheEntry.imageResponseCache.get.incrementalCache (D:\project\web\admin-panel\node_modules\next\src\server\next-server.ts:879:53)
+    at D:\project\web\admin-panel\node_modules\next\src\server\response-cache\index.ts:115:30
+    at D:\project\web\admin-panel\node_modules\next\src\lib\batcher.ts:78:24 {
+  [cause]: ConnectTimeoutError: Connect Timeout Error (attempted address: dl.harfhesab.com:443, timeout: 10000ms)
+      at onConnectTimeout (node:internal/deps/undici/undici:2602:28)
+      at Immediate._onImmediate (node:internal/deps/undici/undici:2568:35)
+      at processImmediate (node:internal/timers:485:21)
+      at process.callbackTrampoline (node:internal/async_hooks:130:17) {
+    code: 'UND_ERR_CONNECT_TIMEOUT'
+  }
+}
+2026-11-25T00:23:34: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 64441,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 242,
+      bytesRead: 561313
+    }
+  }
+}
+2026-11-25T00:24:03: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 54519,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 243,
+      bytesRead: 495777
+    }
+  }
+}
+2026-11-25T00:24:04: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 64439,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 249,
+      bytesRead: 561313
+    }
+  }
+}
+2026-11-25T00:24:04: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 54515,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 241,
+      bytesRead: 659617
+    }
+  }
+}
+2026-11-25T00:24:04: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 56234,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 247,
+      bytesRead: 561313
+    }
+  }
+}
+2026-11-25T00:24:04: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 64445,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 249,
+      bytesRead: 495777
+    }
+  }
+}
+2026-11-25T00:24:05: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 64443,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 250,
+      bytesRead: 561313
+    }
+  }
+}
+2026-11-25T00:24:06: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 64444,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 244,
+      bytesRead: 561313
+    }
+  }
+}
+2026-11-25T00:25:03: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+      at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+    errno: -4077,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+}
+2026-11-25T00:27:29: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: SocketError: other side closed
+      at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6294:28)
+      at TLSSocket.emit (node:events:530:35)
+      at endReadableNT (node:internal/streams/readable:1698:12)
+      at processTicksAndRejections (node:internal/process/task_queues:90:21) {
+    code: 'UND_ERR_SOCKET',
+    socket: {
+      localAddress: '192.168.43.207',
+      localPort: 64442,
+      remoteAddress: '45.139.11.111',
+      remotePort: 443,
+      remoteFamily: 'IPv4',
+      timeout: undefined,
+      bytesWritten: 247,
+      bytesRead: 306465
+    }
+  }
+}
+2026-11-25T00:34:43: TypeError: terminated
+    at Fetch.onAborted (node:internal/deps/undici/undici:11132:53)
+    at Fetch.emit (node:events:518:28)
+    at Fetch.terminate (node:internal/deps/undici/undici:10290:14)
+    at Object.onError (node:internal/deps/undici/undici:11253:38)
+    at Request.onError (node:internal/deps/undici/undici:2094:31)
+    at Object.errorRequest (node:internal/deps/undici/undici:1591:17)
+    at TLSSocket.<anonymous> (node:internal/deps/undici/undici:6319:16)
+    at TLSSocket.emit (node:events:530:35)
+    at node:net:351:12
+    at TCP.done (node:_tls_wrap:650:7) {
+  [cause]: Error: read ECONNRESET
+      at TLSWrap.onStreamRead (node:internal/stream_base_commons:216:20)
+      at TLSWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+    errno: -4077,
+    code: 'ECONNRESET',
+    syscall: 'read'
+  }
+}
